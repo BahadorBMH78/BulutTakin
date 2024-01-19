@@ -8,6 +8,8 @@ export default function Body({ minimize }) {
 
   ////////////////////////////////////////////////////// render ///////////////////////////////
 
+  // the whole page 
+
   return (
     <section
       className={styles.section}
