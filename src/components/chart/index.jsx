@@ -1,7 +1,13 @@
 import { useEffect } from "react";
 import * as echarts from "echarts";
+import { GridComponent } from 'echarts/components';
+import { LineChart } from 'echarts/charts';
+import { UniversalTransition } from 'echarts/features';
+import { CanvasRenderer } from 'echarts/renderers';
+echarts.use([GridComponent, LineChart, CanvasRenderer, UniversalTransition]);
 
 export default function Chart() {
+  
   useEffect(() => {
     var option = {
       xAxis: {
