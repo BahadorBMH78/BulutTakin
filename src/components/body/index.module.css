@@ -1,0 +1,234 @@
+.section {
+  width: 100%;
+  margin: 19px 31px;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.cardsRow {
+  display: flex;
+  gap: 25px;
+  height: fit-content;
+}
+
+.half1 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.half1 h2 {
+  color: var(--dark-text);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.secondCardBody {
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+}
+
+.balance {
+  color: var(--dark-text);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.title {
+  width: 90px;
+  color: var(--gray-text);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  gap: 24px;
+  position: relative;
+  font-family: "Josefin Sans";
+}
+
+.header {
+  display: flex;
+  gap: 30.5px;
+  align-items: center;
+}
+
+.profile_pic {
+  border-radius: 100px;
+  margin-top: -8px;
+}
+
+.inner_card {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06),
+    0px 4px 8px -2px rgba(16, 24, 40, 0.1);
+  border: 1px solid #eaecf0;
+}
+
+.status_container {
+  padding: 24px;
+}
+
+.stats h1 {
+  color: var(--dark-text);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.stats h2 {
+  color: var(--dark-text);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.stats h3 {
+  color: var(--gray-bold);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.stats h4 {
+  color: var(--gray-bold);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.progress_bar {
+  background: var(--gray);
+  border-radius: 16px;
+  width: 100%;
+  height: 20px;
+}
+
+.progress {
+  background: var(--purple);
+  border-radius: 16px;
+  width: 60%;
+  height: 20px;
+}
+
+.toDoList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.toDoList p {
+  color: var(--gray-bold);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  width: 196px;
+}
+
+.toDoItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.percentageGreen {
+  display: flex;
+  justify-content: flex-end;
+}
+.percentageGreen div {
+  width: 76px;
+  height: 35px;
+  background: var(--light-green);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--green);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.percentageRed {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.percentageRed div {
+  width: 76px;
+  height: 35px;
+  background: var(--light-red);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--red);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.headTitle {
+  color: var(--dark-text);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0;
+}
+
+.number {
+  font-size: 40px;
+  margin-top: -20px;
+}
+
+.cardsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.chartContainer {
+  width: 100%;
+  height: 310px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,42 @@
+
+.container h2 {
+  color: var(--dark-text);
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+  font-family: Roboto;
+}
+
+.cardContainer {
+  margin-top: 3px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.cardContainer p {
+  color: var(--dark-text);
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile_pic {
+  border-radius: 100px;
+}
+
+.grid {
+    margin-left: 83px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 22% 40% 33%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
