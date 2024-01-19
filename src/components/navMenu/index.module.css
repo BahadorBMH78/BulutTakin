@@ -30,6 +30,10 @@
   overflow: hidden;
 }
 
+.itemsContainer {
+  cursor: pointer;
+}
+
 .itemsContainer p {
   margin: 0;
   color: white;
@@ -37,7 +41,6 @@
   font-style: normal;
   font-weight: 500;
   font-family: "Roboto";
-  cursor: pointer;
 }
 
 .item {
