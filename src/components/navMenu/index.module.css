@@ -1,16 +1,16 @@
 .main {
   display: flex;
+  position: relative;
 }
 
 .aside {
   padding-top: 32px;
   background: var(--purple);
-  position: fixed;
   height: 100vh;
   display: flex;
   flex-direction: column;
   user-select: none;
-  position: relative;
+  position: fixed;
   transition: 0.3s all;
 }
 
@@ -70,6 +70,7 @@
 .name {
     display: flex;
     flex-direction: column;
+    transition: 0.3s all;
 }
 
 .circle {
@@ -88,3 +89,26 @@
     cursor: pointer;
     transition: 0.3s all;
 }
+
+.settings {
+  margin-top: 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow: hidden !important;
+  position: absolute;
+  bottom: 50px;
+}
+
+/* @media screen and (max-height: 1050px) {
+  .aside {
+    padding-top: 32px;
+    background: var(--purple);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    position: relative;
+    transition: 0.3s all;
+  }
+} */

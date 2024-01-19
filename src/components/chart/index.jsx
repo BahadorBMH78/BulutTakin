@@ -12,9 +12,9 @@ export default function Chart() {
         type: "value",
       },
       legend: {
-        orient: "horizontal", // 'vertical'
-        x: "50px", // 'center' | 'left' | {number},
-        y: "bottom", // 'center' | 'bottom' | {number}
+        orient: "horizontal",
+        x: "50px",
+        y: "bottom",
         data: ["Deposit", "Withdrawal"],
         icon: "circle"
       },

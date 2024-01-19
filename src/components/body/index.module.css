@@ -6,6 +6,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 48px;
+  transition: 0.3s all;
 }
 
 .container {
@@ -42,7 +43,7 @@
 .secondCardBody {
   display: flex;
   flex-direction: column;
-  /* gap: 8px; */
+  gap: 8px;
 }
 
 .balance {
@@ -231,4 +232,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.recentEmails{
+  color: var(--dark-text);
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+  font-family: Roboto;
 }

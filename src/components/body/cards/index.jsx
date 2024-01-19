@@ -46,7 +46,6 @@ export default function Body() {
           <Card height="110px" width="190px">
             <div
               className={styles.secondCardBody}
-              style={{ gap: width <= 1700 ? "8px" : "25px" }}
             >
               <h2 className={styles.headTitle}>New Clients</h2>
               <div className={styles.percentageGreen}>
@@ -58,7 +57,7 @@ export default function Body() {
             </div>
           </Card>
           <Card height="110px" width="190px">
-            <div className={styles.secondCardBody} style={{ gap: "8px" }}>
+            <div className={styles.secondCardBody}>
               <h2 className={styles.headTitle}>New Clients</h2>
               <div className={styles.percentageRed}>
                 <div>
@@ -75,6 +74,7 @@ export default function Body() {
           </Card>
         </div>
       </div>
+      <h2 className={styles.recentEmails}>Recent emails</h2>
       <Emails />
     </div>
   );

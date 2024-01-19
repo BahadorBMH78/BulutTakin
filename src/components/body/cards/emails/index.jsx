@@ -12,7 +12,6 @@ export default function Emails() {
 
   return (
     <div className={styles.container}>
-      <h2>Recent emails</h2>
       <div className={styles.column}>
         {persons.map((item, index) => {
           return (

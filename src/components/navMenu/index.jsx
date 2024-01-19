@@ -1,10 +1,8 @@
-"use client";
-
 import Image from "next/image";
 import styles from "./index.module.css";
 import { useState } from "react";
 
-export default function NavMenu() {
+export default function NavMenu({ minimize, setMinimize }) {
   ////////////////////////////////////////////////////// constants ///////////////////////////////
   const items = [
     { name: "Dashboard", icon: "/home.svg" },
@@ -24,9 +22,8 @@ export default function NavMenu() {
     Group: false,
     List: false,
     Finance: false,
+    Settings: false,
   });
-
-  const [minimize, setMinimize] = useState(false);
 
   ////////////////////////////////////////////////////// functions ///////////////////////////////
 
@@ -55,7 +52,7 @@ export default function NavMenu() {
         <div className={styles.circle} onClick={() => setMinimize(!minimize)}>
           <Image
             src="/Vector.svg"
-            width={7}
+            width={10}
             height={12}
             style={{ transform: minimize ? "rotate(180deg)" : "none" }}
           />
@@ -94,6 +91,39 @@ export default function NavMenu() {
               </div>
             );
           })}
+        </div>
+        <div className={styles.settings}>
+          <div
+            className={styles.itemsContainer}
+            onClick={() => setActiveTab("Settings")}
+          >
+            <div className={styles.item}>
+              <div
+                className={styles.active}
+                style={{
+                  opacity: active && active["Settings"] ? 1 : 0,
+                }}
+              />
+              <div
+                className={styles.icon}
+                style={{ paddingLeft: minimize ? "20px" : 0 }}
+              >
+                <Image src="/settings.svg" fill />
+              </div>
+              <div
+                className={styles.name}
+                style={{ opacity: minimize ? 0 : 1 }}
+              >
+                <p>Settings</p>
+                <div
+                  className={styles.underLine}
+                  style={{
+                    opacity: active && active["Settings"] ? 1 : 0,
+                  }}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </aside>
     </main>
