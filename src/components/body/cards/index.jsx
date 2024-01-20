@@ -27,6 +27,7 @@ export default function Body() {
               width={width <= 1700 ? "150px" : "196px"}
               height={width <= 1700 ? "124px" : "162px"}
               key={index}
+              type="normal"
             >
               <div
                 className={styles.cardBody}
@@ -43,7 +44,7 @@ export default function Body() {
       </div>
       <div className={styles.cardsRow}>
         <div className={styles.cardsColumn}>
-          <Card height="110px" width="190px">
+          <Card height="110px" width="190px" type="normal">
             <div
               className={styles.secondCardBody}
             >
@@ -56,7 +57,7 @@ export default function Body() {
               <p className={styles.number}>54</p>
             </div>
           </Card>
-          <Card height="110px" width="190px">
+          <Card height="110px" width="190px" type="normal">
             <div className={styles.secondCardBody}>
               <h2 className={styles.headTitle}>New Clients</h2>
               <div className={styles.percentageRed}>
@@ -69,7 +70,7 @@ export default function Body() {
           </Card>
         </div>
         <div className={styles.chartContainer}>
-          <Card width="100%" height="100%" noPadding>
+          <Card width="100%" height="100%" noPadding type="chart">
             <Chart />
           </Card>
         </div>

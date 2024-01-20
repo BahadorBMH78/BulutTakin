@@ -54,7 +54,10 @@ export default function NavMenu({ minimize, setMinimize }) {
             src="/Vector.svg"
             width={10}
             height={12}
-            style={{ transform: minimize ? "rotate(180deg)" : "none" }}
+            style={{
+              transform: minimize ? "rotate(180deg)" : "none",
+              transition: "0.3s all",
+            }}
           />
         </div>
         <div className={styles.nav}>

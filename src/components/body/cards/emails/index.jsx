@@ -15,7 +15,7 @@ export default function Emails() {
       <div className={styles.column}>
         {persons.map((item, index) => {
           return (
-            <Card key={index} width="100%" height="56px" noPadding radius="8px">
+            <Card type="email" key={index}>
               <div className={styles.cardContainer}>
                 <Image
                   src="/download.jpeg"

@@ -1,4 +1,5 @@
 .container {
+  transition: 0.3s all;
   border-radius: 8px;
   background: var(--purple);
   width: 100%;
@@ -11,5 +12,19 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  color: white;
+  user-select: none;
+}
+
+.container:hover {
+  transition: 0.3s all;
+  background: var(--button-hover);
+  border-radius: 8px;
+  color: var(--purple);
+  cursor: pointer;
+}
+
+.container:active {
+  background: var(--Brand-900, #42307D);
   color: white;
 }

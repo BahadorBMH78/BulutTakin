@@ -17,7 +17,7 @@ export default function Aside() {
 
   return (
     <div>
-      <Card width="303px" height="fit-content">
+      <Card type="aside" width="303px" height="fit-content">
         <div className={styles.stats}>
           <div className={styles.header}>
             {header_items.map((item, index) => {
